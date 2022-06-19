@@ -1,0 +1,81 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+#calculator_div {
+  display: grid;
+  grid-template-areas:
+    "result result result result"
+    "a b c d"
+    "e f g h"
+    "i j k h"
+    "l m n h"
+    "o p q h";
+  grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr;
+  width: 60vw;
+  height: 80vh;
+}
+button {
+  font-size: 30px;
+}
+#result_div {
+  grid-area: result;
+  background-color: black;
+  border-radius: 15px 15px 0 0;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 2vw;
+}
+#hlus_btn {
+  grid-area: a;
+}
+#minus_btn {
+  grid-area: b;
+}
+#mul_btn {
+  grid-area: c;
+}
+#div_btn {
+  grid-area: d;
+}
+#equal_btn {
+  grid-area: h;
+  background-color: #f19536;
+}
+#one_btn {
+  grid-area: e;
+}
+#two_btn {
+  grid-area: f;
+}
+#three_btn {
+  grid-area: g;
+}
+#four_btn {
+  grid-area: i;
+}
+#five_btn {
+  grid-area: j;
+}
+#six_btn {
+  grid-area: k;
+}
+#seven_btn {
+  grid-area: l;
+}
+#eight_btn {
+  grid-area: m;
+}
+#nine_btn {
+  grid-area: n;
+}
+#zero_btn {
+  grid-area: o;
+}
+#dot_btn {
+  grid-area: p;
+}
+#ac_btn {
+  grid-area: q;
+}
